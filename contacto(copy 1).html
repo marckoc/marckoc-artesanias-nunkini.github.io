@@ -32,21 +32,27 @@
                 <h2>Envíanos un mensaje</h2>
 
        
-                <form action="https://formsubmit.co/argaezmarcos@gmail.com" method="post">
-                    <!-- Asunto personalizado del correo -->
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Artesanías Nunkiní">
+                <form action="https://formsubmit.co/argaezmarcos@gmail.com" method="POST">
+    <!-- Campo oculto para el asunto del correo -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde Artesanías Nunkiní">
+    
+    <!-- Campo oculto para redirigir después del envío -->
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
 
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+    <!-- Campo oculto para evitar el captcha (opcional, si lo configuras) -->
+    <!-- <input type="hidden" name="_captcha" value="false"> -->
 
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    <label for="email">Correo Electrónico</label>
+    <input type="email" id="email" name="email" required>
 
-                    <button type="submit">Enviar</button>
-                </form>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
             </div>
     
             <!-- Información de contacto -->
